@@ -1,0 +1,9 @@
+{
+	"name": "JohnADFTutorialDataFactory",
+	"location": "northeurope",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "1fc29331-0057-4ee1-8881-6d1672adc15f",
+		"tenantId": "d595be8d-b306-45f4-8064-9e5b82fbe52b"
+	}
+}
