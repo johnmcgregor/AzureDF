@@ -4,7 +4,14 @@
 		"description": "testing trigger - to be used temporarily for various tutorials - don't forget to set end date.....",
 		"annotations": [],
 		"runtimeState": "Started",
-		"pipelines": [],
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "CopyPipeline_BlobtoSQLDatabase",
+					"type": "PipelineReference"
+				}
+			}
+		],
 		"type": "ScheduleTrigger",
 		"typeProperties": {
 			"recurrence": {
