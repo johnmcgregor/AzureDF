@@ -315,13 +315,6 @@
 				"pipelines": [
 					{
 						"pipelineReference": {
-							"referenceName": "CopyPipeline",
-							"type": "PipelineReference"
-						},
-						"parameters": {}
-					},
-					{
-						"pipelineReference": {
 							"referenceName": "CopyPipeline_BlobtoSQLDatabase",
 							"type": "PipelineReference"
 						},
@@ -340,7 +333,6 @@
 				}
 			},
 			"dependsOn": [
-				"[concat(variables('factoryId'), '/pipelines/CopyPipeline')]",
 				"[concat(variables('factoryId'), '/pipelines/CopyPipeline_BlobtoSQLDatabase')]"
 			]
 		}
