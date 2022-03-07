@@ -1,12 +1,19 @@
 {
-	"name": "trigger1",
+	"name": "RunEveryMinute",
 	"properties": {
+		"description": "testing trigger - to be used temporarily for various tutorials - don't forget to set end date.....",
 		"annotations": [],
 		"runtimeState": "Started",
 		"pipelines": [
 			{
 				"pipelineReference": {
 					"referenceName": "CopyPipeline",
+					"type": "PipelineReference"
+				}
+			},
+			{
+				"pipelineReference": {
+					"referenceName": "CopyPipeline_BlobtoSQLDatabase",
 					"type": "PipelineReference"
 				}
 			}
@@ -17,7 +24,7 @@
 				"frequency": "Minute",
 				"interval": 1,
 				"startTime": "2022-03-05T12:07:00Z",
-				"endTime": "2022-03-05T12:22:03Z",
+				"endTime": "2022-03-07T13:00:00Z",
 				"timeZone": "UTC"
 			}
 		}
