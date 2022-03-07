@@ -150,7 +150,8 @@
 					"elapsedTimeMetric": {},
 					"cancelAfter": {}
 				},
-				"annotations": []
+				"annotations": [],
+				"lastPublishTime": "2022-03-07T11:10:44Z"
 			},
 			"dependsOn": [
 				"[concat(variables('factoryId'), '/datasets/Employees_for_sqldatabase')]",
@@ -311,16 +312,8 @@
 			"properties": {
 				"description": "testing trigger - to be used temporarily for various tutorials - don't forget to set end date.....",
 				"annotations": [],
-				"runtimeState": "Started",
-				"pipelines": [
-					{
-						"pipelineReference": {
-							"referenceName": "CopyPipeline_BlobtoSQLDatabase",
-							"type": "PipelineReference"
-						},
-						"parameters": {}
-					}
-				],
+				"runtimeState": "Stopped",
+				"pipelines": [],
 				"type": "ScheduleTrigger",
 				"typeProperties": {
 					"recurrence": {
@@ -332,9 +325,7 @@
 					}
 				}
 			},
-			"dependsOn": [
-				"[concat(variables('factoryId'), '/pipelines/CopyPipeline_BlobtoSQLDatabase')]"
-			]
+			"dependsOn": []
 		}
 	]
 }
