@@ -3,7 +3,7 @@
 	"properties": {
 		"description": "testing trigger - to be used temporarily for various tutorials - don't forget to set end date.....",
 		"annotations": [],
-		"runtimeState": "Started",
+		"runtimeState": "Stopped",
 		"pipelines": [],
 		"type": "ScheduleTrigger",
 		"typeProperties": {
