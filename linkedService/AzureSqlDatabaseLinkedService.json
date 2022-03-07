@@ -1,0 +1,13 @@
+{
+	"name": "AzureSqlDatabaseLinkedService",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"description": "first tutorial passing csv data to Azure sql db",
+		"annotations": [],
+		"type": "AzureSqlDatabase",
+		"typeProperties": {
+			"connectionString": "integrated security=False;encrypt=True;connection timeout=30;data source=dp900sqdblserver.database.windows.net;initial catalog=\"ADF Tutorials\";user id=dp900sqldbserver",
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQDA3MzEwRTgxLUU2QTMtNEE2OS1BQkQyLUVBNjM5NzRDNTNGQ180NzU0MGY0ZC04NzYyLTRlNjgtODYzMi01M2U1MWIwNjlhYzciDQp9"
+		}
+	}
+}
