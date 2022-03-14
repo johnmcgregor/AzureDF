@@ -20,6 +20,11 @@
 			{
 				"name": "LastName",
 				"type": "varchar"
+			},
+			{
+				"name": "TimeModified",
+				"type": "datetime2",
+				"scale": 7
 			}
 		],
 		"typeProperties": {
